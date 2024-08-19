@@ -1,0 +1,23 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      img.city-section__arrow(src="images/city-section-arrow.png" loading="lazy" width="118" height="170" alt="image")
+      img.city-section__corner(src="images/city-section-corner.svg" loading="lazy" width="92" height="83" alt="image")
+      .city-section__box
+        h2.city-section__title.font-w-b-regular.font-s-65
+          | Начните 
+          br.no-br
+          | свой бизнес 
+          br
+          span.city-section__title-bg.color-gold прямо сейчас
+        .city-section__sub-title.font-w-regular.font-s-22
+          span.color-gold Проверьте 
+          br.no-br
+          | свободен ли ваш город 
+          br.no-br
+          | для работы по франшизе
+        form.city-section__form(data-feedback-form)
+          input.input.city-item(type="text" name="city" autocomplete="off" placeholder="Название города")
+          input.input.city-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.city-item-btn(type="submit") Проверить город
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1566" height="1850" alt="image")

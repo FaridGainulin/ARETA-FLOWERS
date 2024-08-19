@@ -1,0 +1,35 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-b-regular.font-s-55
+        | Откройте свой 
+        br.no-br
+        span.bg-green салон цветов 
+        | с прибылью 
+        br.no-br
+        span.color-gold от 1,5 млн рублей в год
+      .main-section__sub-title
+        img.main-section__sub-title-icon(src="images/main-section-sub-title-icon.png" loading="lazy" width="279" height="258" alt="icon")
+        img.main-section__sub-title-arrow(src="images/main-section-sub-title-arrow.png" loading="lazy" width="118" height="171" alt="icon")
+        .font-w-regular
+          .font-s-26.color-gold Получите
+          .font-s-18 подробный план открытия
+      button.btn.main-item(data-remodal-target="modal-form-plan") Получить материалы
+      .swiper-main
+        .main-section__cards.swiper-wrapper
+          .main-section__card.swiper-slide
+            img.main-section__card-icon(src="images/main-section-card-icon.png" loading="lazy" width="70" height="70" alt="icon")
+            .main-section__card-title.font-s-20.color-gold Быстрый
+            .font-s-18 старт
+          .main-section__card.swiper-slide
+            img.main-section__card-icon(src="images/main-section-card-icon.png" loading="lazy" width="70" height="70" alt="icon")
+            .main-section__card-title.font-s-20.color-gold Минимальные
+            .font-s-18 вложения
+          .main-section__card.swiper-slide
+            img.main-section__card-icon(src="images/main-section-card-icon.png" loading="lazy" width="70" height="70" alt="icon")
+            .main-section__card-title.font-s-20.color-gold Высокая
+            .font-s-18 рентабельность
+        .main-pagination.swiper-progress-main
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1458" height="1602" alt="image")
+      img.main-section__flower(src="images/main-section-flower.png" loading="lazy" width="1386" height="1042" alt="image")

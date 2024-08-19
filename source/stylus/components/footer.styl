@@ -1,0 +1,79 @@
+.footer
+  background-image: url('../images/footer-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #303030
+
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding 20px 0 20px 0
+    gap: 5px
+    +above($breakpoints.sm)
+      justify-content space-between
+      flex-direction: row
+      padding 25px 0 25px 0
+    +above($breakpoints.md)
+      padding 35px 0 35px 0
+    +above($breakpoints.xxl)
+      padding 46px 0 47px 0
+
+  &__logo
+    width 70px
+    height: auto
+    +above($breakpoints.sm)
+      width 80px
+    +above($breakpoints.md)
+      width 90px
+    +above($breakpoints.xxl)
+      width 116px
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+
+  &__connection
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.md)
+      flex-direction: row
+      gap: 30px
+
+  &__call-me
+    display: none
+    +above($breakpoints.sm)
+      display: flex
+      align-items: center
+      justify-content center
+      width 120px
+      height: 19px
+      border-radius: 20px
+      border 1px solid #fff
+      cursor pointer
+    +above($breakpoints.md)
+      width 150px
+      height: 40px
+
+  &__line
+    margin 10px 0 10px 0
+    width 230px
+    height: 3px
+    +above($breakpoints.md)
+      width 250px
+    +above($breakpoints.xxl)
+      width 286px
+
+  &__privacy
+    +above($breakpoints.sm)
+      display: none
+
+.agree-privacy
+  cursor pointer
+  text-decoration: underline
+  color: #979797

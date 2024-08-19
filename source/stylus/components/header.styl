@@ -1,0 +1,46 @@
+.header
+  &__container
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content space-between
+
+  &__logo
+    width 70px
+    height: auto
+    +above($breakpoints.sm)
+      width 80px
+    +above($breakpoints.md)
+      width 90px
+    +above($breakpoints.xxl)
+      width 116px
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+
+  &__connection
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.md)
+      flex-direction: row
+      gap: 30px
+
+  &__call-me
+    display: none
+    +above($breakpoints.sm)
+      display: flex
+      align-items: center
+      justify-content center
+      width 120px
+      height: 19px
+      border-radius: 20px
+      border 1px solid #fff
+      cursor pointer
+    +above($breakpoints.md)
+      width 150px
+      height: 40px
